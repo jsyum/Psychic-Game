@@ -70,6 +70,8 @@ function showGuessesRemaining() {
 function resetVariables() {
   lettersGuessed = [];
   guessesLeft = 10;
+  computerGuess = String.fromCharCode(Math.round(Math.random() * 26) + 97);
+  console.log(computerGuess);
 }
 
 function startGame() {
