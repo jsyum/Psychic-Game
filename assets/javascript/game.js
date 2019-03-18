@@ -16,7 +16,8 @@ function addLetter(usersKeypress) {
   var repeatGuess = lettersGuessed.some(function(item) {
     return item === usersKeypress;
   });
-
+  // returns whatever the value of the element was to use it for later
+  // not using return, undefined
   if (repeatGuess) {
     alert(usersKeypress + " already guessed. Try again!");
   } else {
